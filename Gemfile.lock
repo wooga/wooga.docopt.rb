@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wooga.docopt (0.6.0)
+    wooga_docopt (0.6.0)
 
 GEM
   remote: http://rubygems.org/
@@ -19,7 +19,7 @@ DEPENDENCIES
   json (~> 1.8)
   rake
   test-unit (~> 3.2)
-  wooga.docopt!
+  wooga_docopt!
 
 BUNDLED WITH
    1.14.3
