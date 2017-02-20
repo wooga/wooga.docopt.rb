@@ -1,6 +1,8 @@
 `docopt.rb` – command line option parser, that will make you smile
 ===============================================================================
 
+[![Build Status](https://travis-ci.org/wooga/wooga.docopt.rb.svg?branch=master)](https://travis-ci.org/wooga/wooga.docopt.rb)
+
 This is the wooga ruby port of [`docopt`](https://github.com/docopt/docopt),
 the awesome option parser written originally in python.
 
