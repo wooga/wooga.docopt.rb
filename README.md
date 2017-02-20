@@ -1,13 +1,13 @@
 `docopt.rb` – command line option parser, that will make you smile
 ===============================================================================
 
-This is the ruby port of [`docopt`](https://github.com/docopt/docopt),
+This is the wooga ruby port of [`docopt`](https://github.com/docopt/docopt),
 the awesome option parser written originally in python.
 
-> New in version 0.5.0:
+> New in version 0.6.0:
 >
-> Repeatable flags and commands are counted if repeated (a-la ssh `-vvv`).
-> Repeatable options with arguments are accumulated into list.
+> New argument options_first, disallows interspersing options and arguments. If you supply options_first=True to docopt, it will interpret all arguments as positional arguments after first positional argument.
+> If option with argument could be repeated, its default value will be interpreted as space-separated list. E.g. with [default: ./here ./there] will be interpreted as ['./here', './there'].
 
 Isn't it awesome how `optparse` and `argparse` generate help messages
 based on your code?!
