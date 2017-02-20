@@ -8,15 +8,14 @@ Gem::Specification.new do |s|
   s.specification_version = 2 if s.respond_to? :specification_version=
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.rubygems_version = '1.3.5'
-  s.required_ruby_version = '>= 1.8.7'
+  s.required_ruby_version = '>= 1.9.3'
   ## Leave these as is they will be modified for you by the rake gemspec task.
   ## If your rubyforge_project name is different, then edit it and comment out
   ## the sub! line in the Rakefile
-  s.name              = 'docopt'
-  s.version           = '0.5.0'
-  s.date              = '2012-09-01'
-  # s.rubyforge_project = 'docopt'
-
+  s.name              = 'wooga.docopt'
+  s.version           = '0.6.0'
+  s.date              = '2016-10-03'
+  
   ## Make sure your summary is short. The description may be as long
   ## as you like.
   s.summary = "A command line option parser, that will make you smile."
@@ -51,8 +50,9 @@ Gem::Specification.new do |s|
 
   ## List your development dependencies here. Development dependencies are
   ## those that are only needed during development
-  s.add_development_dependency('json', "~> 1.6.5")
-
+  s.add_development_dependency('rake')
+  s.add_development_dependency('json', "~> 1.8")
+  s.add_development_dependency('test-unit', "~> 3.2")
   ## Leave this section as-is. It will be automatically generated from the
   ## contents of your Git repository via the gemspec task. DO NOT REMOVE
   ## THE MANIFEST COMMENTS, they are used as delimiters by the task.
@@ -72,7 +72,9 @@ Gem::Specification.new do |s|
     examples/odd_even_example.rb
     examples/quick_example.rb
     lib/docopt.rb
+    test/language_agnostic_tester.py
     test/test_docopt.rb
+    test/testcases.docopt
     test/testee.rb
   ]
   # = MANIFEST =
